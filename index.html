@@ -338,6 +338,19 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form-container">
+                <h2 class="footer-form-tittle">Подпишитесь на рассылку</h2>
+                <form class="footer-form">
+                    <label for="">
+                        <input type="email" class="footer-form-input" placeholder="E-mail">
+                    </label>
+                    <button class="footer-form-btn" type="submit">Подписаться <svg class="footer-form-svg">
+                            <use href="./images/symbol-tg.svg#icon-tg">
+                            </use>
+                        </svg></button>
+
+                </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -369,8 +382,14 @@
                                 placeholder="Введіть текст"></textarea>
                         </label>
                         <label for="checkbox" class="contact-form-checkbox">
-                            <input type="checkbox">
-                            <span>Погоджуюся з розсилкою та приймаю <a class="checkbox-link" href="">Умови
+                            <input type="checkbox" checked class="checkbox">
+                            <span class="contact-form-custom">
+                                <svg width="11" height="8" class="contact-form-custom-icon">
+                                    <use href="./images/symbol-vector.svg#icon-Vector"></use>
+                                </svg>
+                            </span>
+                            <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="checkbox-link"
+                                    href="">Умови
                                     договору</a></span>
                         </label>
                     </div>

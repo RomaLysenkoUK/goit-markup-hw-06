@@ -714,6 +714,74 @@ img {
     padding-bottom: 60px;
 }
 
+.footer-form-container {
+    padding-left: 93px;
+    padding-top: 12px;
+}
+
+.footer-form-tittle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: #FFFFFF;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-form-input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #2F303A;
+}
+
+.footer-form-btn {
+    width: 200px;
+    height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    cursor: pointer;
+    padding-left: 28px;
+    padding-top: 10px;
+    padding-right: 28px;
+    padding-bottom: 10px;
+    margin-left: 12px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: #2196F3;
+}
+
+.footer-form-svg {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
 /*------Modal window--------*/
 .backdrop.is-hidden {
     opacity: 0;
@@ -843,6 +911,9 @@ img {
     box-sizing: border-box;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 12px;
+
 }
 
 .contact-form-checkbox {
@@ -851,6 +922,32 @@ img {
 
 .checkbox-link {
     color: var(--accent-color);
+}
+
+.checkbox-text {
+    user-select: none;
+}
+
+.contact-form-custom {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-right: 7px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+}
+
+.contact-form-custom-icon {
+    opacity: 0;
+}
+
+.checkbox:checked+.contact-form-custom .contact-form-custom-icon {
+    opacity: 1;
+    background-color: #2196F3;
 }
 
 .modal-btn-form {
