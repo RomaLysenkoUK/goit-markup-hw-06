@@ -318,7 +318,6 @@ img {
     content: "";
     display: block;
     height: 120px;
-    content: "";
     background-image: url(../images/icons/antenna1.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -330,7 +329,6 @@ img {
     content: "";
     display: block;
     height: 120px;
-    content: "";
     background-image: url(../images/icons/clock1.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -342,7 +340,6 @@ img {
     content: "";
     display: block;
     height: 120px;
-    content: "";
     background-image: url(../images/icons/diagram1.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -354,7 +351,6 @@ img {
     content: "";
     display: block;
     height: 120px;
-    content: "";
     background-image: url(../images/icons/astronaut1.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -748,6 +744,15 @@ img {
     background: #2F303A;
 }
 
+.icon-contact-form {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
 .footer-form-btn {
     width: 200px;
     height: 50px;
@@ -877,6 +882,10 @@ img {
     align-items: center;
 }
 
+.contact-form-feeld {
+    position: relative;
+}
+
 .contact-form-feeld:not(:last-child) {
     margin-bottom: 10px;
 }
@@ -902,6 +911,16 @@ img {
     box-sizing: border-box;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-left: 35px;
+}
+
+.contact-form-input:hover {
+    border-color: var(--accent-color);
+}
+
+
+.contact-form-input:hover+.icon-contact-form>.icon-contact-form-svg {
+    fill: var(--accent-color);
 }
 
 .contact-form-textarea {
@@ -937,21 +956,20 @@ img {
     margin-right: 7px;
     width: 15px;
     height: 15px;
-    border: 1px solid #000000;
+    outline: 2px solid #000000;
+    outline-offset: -2px;
     border-radius: 2px;
+    transition: background-color 250ms ease-in-out;
 }
 
-.contact-form-custom-icon {
-    opacity: 0;
-}
-
-.checkbox:checked+.contact-form-custom .contact-form-custom-icon {
-    opacity: 1;
-    /*background-color: #2196F3;*/
-}
-
-.contact-form-custom {
+.checkbox:checked+.contact-form-custom {
     background-color: #2196F3;
+    outline: 2px solid #2196F3;
+}
+
+
+#checkbox {
+    visibility: hidden;
 }
 
 .modal-btn-form {
