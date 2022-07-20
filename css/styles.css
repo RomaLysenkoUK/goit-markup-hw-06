@@ -947,6 +947,10 @@ img {
 
 .checkbox:checked+.contact-form-custom .contact-form-custom-icon {
     opacity: 1;
+    /*background-color: #2196F3;*/
+}
+
+.contact-form-custom {
     background-color: #2196F3;
 }
 
