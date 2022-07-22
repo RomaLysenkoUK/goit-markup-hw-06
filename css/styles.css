@@ -742,6 +742,8 @@ img {
     border-radius: 4px;
     box-sizing: border-box;
     background: #2F303A;
+
+    color: var(--white-color);
 }
 
 .icon-contact-form {
@@ -916,13 +918,16 @@ img {
 }
 
 .contact-form-input:hover,
-.contact-form-input:focus {
+.contact-form-input:focus,
+.contact-form-textarea:hover,
+.contact-form-textarea:focus {
     border-color: var(--accent-color);
     outline: var(--accent-color);
 }
 
 
-.contact-form-input:hover+.icon-contact-form>.icon-contact-form-svg {
+.contact-form-input:hover+.icon-contact-form>.icon-contact-form-svg,
+.contact-form-input:focus+.icon-contact-form>.icon-contact-form-svg {
     fill: var(--accent-color);
 }
 
